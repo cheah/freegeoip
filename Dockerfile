@@ -1,4 +1,6 @@
-FROM golang:1.7
+FROM golang:1.7-alpine
+
+RUN apk add --update git
 
 COPY cmd/freegeoip/public /var/www
 
